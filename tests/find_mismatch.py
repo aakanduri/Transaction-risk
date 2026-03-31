@@ -8,9 +8,10 @@ import torch
 import joblib
 import numpy as np
 from datetime import datetime
+from pathlib import Path
 
 import sys
-sys.path.insert(0, '/Users/vittorioc/transaction-risk')
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from model.model import FraudMLP
 from service.features import compute_all_features, get_feature_names

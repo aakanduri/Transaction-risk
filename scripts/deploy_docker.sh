@@ -3,7 +3,7 @@
 
 set -e  # Exit on any error
 
-echo "🚀 Transaction Risk Engine - Docker Deployment"
+echo "🚀 Transaction Risk - Docker Deployment"
 echo "=" | tr '=' '='  | head -c 70; echo
 
 # Step 1: Check if Docker is running

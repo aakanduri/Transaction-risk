@@ -50,7 +50,7 @@ class HealthResponse(BaseModel):
 
 # create fastapi app
 app = FastAPI(
-    title="Transaction Risk Engine API",
+    title="Transaction Risk API",
     description="Real-time fraud detection using PyTorch ML model",
     version="1.0.0"
 )
@@ -58,7 +58,7 @@ app = FastAPI(
 @app.on_event("startup")
 async def startup():
     """initialize services on app startup"""
-    print("🚀 starting transaction risk engine api...")
+    print("🚀 starting transaction risk api...")
     
     # load model (this happens once at startup)
     predictor = get_predictor()
@@ -89,7 +89,7 @@ async def shutdown():
 async def root():
     """api root - basic info"""
     return {
-        "service": "Transaction Risk Engine",
+        "service": "Transaction Risk",
         "version": "1.0.0",
         "endpoints": {
             "score": "/score - score a transaction",

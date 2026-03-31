@@ -1,4 +1,4 @@
-# Docker Compose Configuration for Transaction Risk Engine
+# Docker Compose Configuration for Transaction Risk
 # This orchestrates all services needed to run the fraud detection system
 
 version: '3.8'

@@ -1,4 +1,4 @@
-# Transaction Risk Engine - Docker Quick Start
+# Transaction Risk - Docker Quick Start
 
 ## Prerequisites
 
